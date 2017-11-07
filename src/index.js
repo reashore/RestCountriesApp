@@ -1,10 +1,11 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import CountryList from './Components/CountryList';
 import registerServiceWorker from './registerServiceWorker';
 
 let root = document.getElementById('root');
-ReactDOM.render(<App />, root);
+ReactDOM.render(<CountryList />, root);
 
 registerServiceWorker();
