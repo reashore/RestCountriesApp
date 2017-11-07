@@ -24,11 +24,15 @@ class CountryList extends Component {
         const {countryNames, loading} = this.state;
 
         return (
-            loading ? <div>Loading Country Names</div> : (!countryNames.length) ? 
-                <div>No Country Names</div> :
+            <div>
+                <h2>Country List</h2>
+
+                {loading ? <div>Loading Country Names</div> : (!countryNames.length) ? <div>No Country Names</div> :
                 <ul>
                     {countryNames.map((countryName, index) => <li key={index}>{countryName}</li>)}
                 </ul>                
+                }
+            </div>
         );
     }
 }
